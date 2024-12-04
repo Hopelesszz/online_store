@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./cosmic-background-with-colorful-laser-lights-with-cool-shapes.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+.form{
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+}
+.title{
+    color: white;
+    padding-top: 100px;
+    margin-left: 100px;
+    outline: none;
+    font-family: 'AFACAD Flux', sans-serif;
+    font-size: 30px;
+}
+.form>input{
+    height: 12%;
+    width: 65%;
+    background-color: black;
+    font-family: 'AFACAD Flux', sans-serif;
+    cursor: pointer;
+    border: 1px solid rgb(79, 79, 79);
+    color: white;
+    outline: none;
+    margin-left: 20%;
+    padding-left: 3%;
+}
+.form>button{
+    height: 12%;
+    width: 65%;
+    background-color: rgb(0, 206, 0);
+    font-family: 'AFACAD Flux', sans-serif;
+    cursor: pointer;
+    border: 1px solid rgb(79, 79, 79);
+    outline: none;
+    margin-left: 20%;
+    padding-left: 3%;
+}

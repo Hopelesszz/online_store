@@ -1,0 +1,92 @@
+.gearMain{
+    height: 90vh;
+    width: 100vw;
+    background-color: black;
+}
+.Container{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+}
+.GearPhoto{
+    height: 800px;
+    width: 90%;
+    margin-left: 5%;
+}
+.titleGear{
+    background-color: rgb(17, 17, 17);
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+}
+.gearTitle{
+    margin-left: 100px;
+    font-family: 'AFACAD Flux', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+.gearName{
+    color:rgb(0, 203, 0);
+    font-size: 40px;
+}
+.slider .slick-next {
+    right: 85px; 
+}
+.slider .slick-prev {
+    left: 85px; 
+}
+.tech{
+    margin-top: 10%;
+    background-color: rgb(54, 54, 54);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.techTitle{
+    margin-top: 80px;
+    margin-left: 120px;
+    font-family: 'AFACAD Flux', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+.techSpec{
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+}
+.techSpecName{
+    font-family: 'AFACAD Flux', sans-serif;
+    color: white;
+    font-size: 15px;
+    margin-left: 120px;
+    width: 160px;
+}
+.techSpecValue{
+    font-family: 'AFACAD Flux', sans-serif;
+    color: rgb(135, 135, 135);
+}
+.line{
+    background-color: rgb(135, 135, 135);
+    height: 1px;
+    width: 82%;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.Edit{
+    background-color: orange;
+    font-family: 'AFACAD Flux', sans-serif;
+    color: black;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    height: 50px;
+    width: 300px;
+    margin-left: 120px;
+}

@@ -1,0 +1,38 @@
+.photo{
+    width: 350px;
+    height: 400px;
+    background-color: rgb(17, 17, 17)
+}
+.er{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+.slick-arrow {
+    display: block !important; 
+    opacity: 1;
+    z-index: 10;
+    color: black
+}
+.slick-next {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%); 
+}
+.slick-prev {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider-container {
+    position: relative;
+    overflow: visible; 
+    background-color: white;
+    height: 1000px;
+    width: 100%;
+}
+.slick-slide>div{
+    margin: 0px 10px;
+}

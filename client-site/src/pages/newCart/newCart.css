@@ -1,0 +1,19 @@
+.newCartContainer{
+    display: flex;
+    flex-direction: column;
+}
+.newCartSelect{
+    width: 600px;
+    margin-left: 50px;
+    height: 70px;
+    background-color: black;
+    border: 1px solid rgb(79, 79, 79);
+    color: white;
+    padding-left: 30px;
+    font-size: 20px;
+    appearance: none;
+    margin-bottom: 50px;
+}
+.newCartSelect>option{
+    padding-top: 25px;
+}

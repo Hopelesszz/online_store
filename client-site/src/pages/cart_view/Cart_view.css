@@ -1,0 +1,43 @@
+.searchCart{
+    background-color: rgb(79, 79, 79);
+    height: 80px;
+    border: none;
+    outline: none;
+    color:  rgb(221, 221, 221);
+    font-family: 'AFACAD Flux', sans-serif;
+    cursor: pointer;
+    width: 50vw;
+    margin: 50px;
+    margin-top: 50px;
+    margin-left: 20px;
+    padding: 2%;
+}
+.newCartItemButton{
+    background-color: rgb(0, 187, 0);
+    font-family: 'AFACAD Flux', sans-serif;
+    color: black;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    height: 80px;
+    width: 200px;
+    text-decoration: none;
+}
+.foundGear{
+    margin-left: 20px;
+}
+.cartButton{
+    background-color: rgb(0, 187, 0);
+    font-family: 'AFACAD Flux', sans-serif;
+    color: black;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    height: 50px;
+    width: 150px;
+    text-decoration: none;
+    margin-left: 70px;
+    margin-top: 30px;
+}

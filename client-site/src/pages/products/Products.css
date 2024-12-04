@@ -1,0 +1,155 @@
+.MainPage{
+    background-color: black;
+    width: 100vw;
+    height: 90vh;
+}
+.result{
+    font-family: 'AFACAD Flux', sans-serif;
+    color: rgb(221, 221, 221);
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.gearContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+.gearPhoto{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(17, 17, 17);
+}
+.gear{
+    display: flex;
+    flex-direction: column;
+}
+.desc{
+    background-color: rgb(60, 60, 60);
+    width: 300px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.nameGear{
+    color: white;
+    font-size: 17px;
+    font-family: 'AFACAD Flux', sans-serif;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.descGear{
+    list-style-type: disc; 
+    padding-left: 10px; 
+    font-family: 'AFACAD Flux', sans-serif;
+    color: rgb(221, 221, 221);
+    font-size: 15px;
+    margin-left: 30px;
+}
+.descList{
+    list-style-type: square;
+    color: rgb(221, 221, 221);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.descList li::marker {
+    color: rgb(221, 221, 221);
+}
+.details{
+    font-family: 'AFACAD Flux', sans-serif;
+    color: rgb(0, 203, 0);
+    margin-left: 30px;
+    font-size: 20px;
+}
+.priceGear{
+    color: white;
+    font-size: 17px;
+    font-family: 'AFACAD Flux', sans-serif;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.link{
+    text-decoration: none;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+}
+.searchParams{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.brand{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.brand>p{
+    font-family: 'AFACAD Flux', sans-serif;
+    color: white;
+    font-size: 25px;
+    padding-left: 30px; 
+}
+.input{
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px; 
+}
+.input>p{
+    font-family: 'AFACAD Flux', sans-serif;
+    color: white;
+    font-size: 20px;
+    padding-left: 30px; 
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px; 
+    gap: 20px;
+}
+.price{
+    width: 400px;
+    color: rgb(79, 79, 79);
+}
+.price>input{
+    background-color: black;
+    font-family: 'AFACAD Flux', sans-serif;
+    cursor: pointer;
+    border: 1px solid rgb(79, 79, 79);
+    color: white;
+    outline: none;
+    height: 25px;
+    width: 70px;
+    text-align: center;
+}
+.price>div{
+    background-color: rgb(79, 79, 79);
+    height: 1px;
+    width: 30px;
+    margin-top: 13px;
+}
+.priceTitle{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'AFACAD Flux', sans-serif;
+    color: white;
+    font-size: 25px;
+    padding-left: 30px; 
+}
+.price>button{
+    background-color: rgb(0, 187, 0);
+    font-family: 'AFACAD Flux', sans-serif;
+    color: black;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    height: 25px;
+    width: 70px;
+}
