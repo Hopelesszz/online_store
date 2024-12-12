@@ -36,6 +36,7 @@ app.use("/user", userRoute)
 app.use("/cart", cartRoute)
 app.use("/checkout", stripeRoute);
 
+
 app.use((err,req,res,next)=>{
     const errStatus = err.status || 500
     const errMessage = err.message || "Something went wrong"

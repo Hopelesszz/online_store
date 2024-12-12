@@ -112,14 +112,14 @@ export const searchPrice = async (req,res,next)=>{
     const category = req.query.category
     const min = req.query.min
     const max = req.query.max
-    const brand = req.query.brand
+    const brand = req.query.brand ? req.query.brand.split(',') : null;
     try{
         const filter = {
             category: category,
             cost: { $gte: min || 0, $lte: max || 1000 }
         };
         if (brand) {
-            filter.brand = brand;
+            filter.brand = Array.isArray(brand) ? { $in: brand } : { $in: [brand] };
         }
         const Price = await Product.find(filter);
         res.status(200).json(Price);

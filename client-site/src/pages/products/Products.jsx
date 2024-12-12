@@ -8,15 +8,20 @@ import { useState } from "react";
 const Products = () => {
     const [minPrice, setMinPrice] = useState(0);
     const [maxPrice, setMaxPrice] = useState(1000);
-    const [brand,setBrand] = useState("");
     const category = useLocation()
+    const [brand,setBrand] = useState([]);
     const { data, loading, error,reFetch } = useFetch(`/product/searchByPrice?category=${category.state.category}&min=${minPrice}&max=${maxPrice}&brand=${brand}`)
     const { data: count, loading: loadingCount, error: errorCount } = useFetch(`product/searchCount?category=${category.state.category}`);
-    console.log(minPrice)
-    console.log(maxPrice)
     const changeBrand = (value) => {
-        setBrand(prevBrand => prevBrand === value ? "" : value); 
+        setBrand((prev) => {
+            if (prev.includes(value)) {
+                return prev.filter((item) => item !== value);
+            } else {
+                return [...prev, value];
+            }
+        });
     }
+    console.log(brand)
     return(
         <>
         <Header/>
@@ -27,23 +32,23 @@ const Products = () => {
                 <div className="brand">
                     <p>Brand</p>
                     <div className="input">
-                        <input onChange={() => changeBrand("HyperX")} type="checkbox"></input>
+                        <input onChange={() => changeBrand("HyperX")} type="checkbox" checked={brand.includes("HyperX")}></input>
                         <p>HyperX</p>
                     </div>
                     <div className="input">
-                        <input onChange={() => changeBrand("Razer")} type="checkbox"></input>
+                        <input onChange={() => changeBrand("Razer")} type="checkbox" checked={brand.includes("Razer")}></input>
                         <p>Razer</p>
                     </div>
                     <div className="input">
-                        <input onChange={() => changeBrand("Hator")} type="checkbox"></input>
+                        <input onChange={() => changeBrand("Hator")} type="checkbox" checked={brand.includes("Hator")}></input>
                         <p>Hator</p>
                     </div>
                     <div className="input">
-                        <input onChange={() => changeBrand("SteelSeries")} type="checkbox"></input>
+                        <input onChange={() => changeBrand("SteelSeries")} type="checkbox" checked={brand.includes("SteelSeries")}></input>
                         <p>SteelSeries</p>
                     </div>
                     <div className="input">
-                        <input onChange={() => changeBrand("Logitech")} type="checkbox"></input>
+                        <input onChange={() => changeBrand("Logitech")} type="checkbox" checked={brand.includes("Logitech")}></input>
                         <p>Logitech</p>
                     </div>
                 </div>

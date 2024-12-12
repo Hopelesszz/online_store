@@ -114,7 +114,7 @@ const Cart = () => {
             axios.post("/order/", {
                 userId: user._id,
                 items:data[0].items,
-                order_state:"Paid"
+                totalAmount:owerall,
             });
         } catch (err) {
             console.error(err);

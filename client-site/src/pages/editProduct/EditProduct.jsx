@@ -78,10 +78,10 @@ const Edit_Product = () => {
             <h1 className="newProductTitle">edit product</h1>
             <input ref={fileInputRef} type="file" multiple onChange={(e) => setFiles(e.target.files)} className="hiddenFileInput"/>
             <div className="newProductPhoto" onClick={handleFileClick}>Photos</div>
-            <input onChange={(event) => setName(event.target.value)} value={data.name} className="newProductInput" type="text" placeholder="name"></input>
-            <input onChange={(event) => setBrand(event.target.value)} value={data.brand} className="newProductInput" type="text" placeholder="brand"></input>
-            <input onChange={(event) => setCategory(event.target.value)} value={data.category} className="newProductInput" type="text" placeholder="category"></input>
-            <input onChange={(event) => setCost(event.target.value)} value={data.cost} className="newProductInput" type="number" placeholder="cost"></input>
+            <input onChange={(event) => setName(event.target.value)}  className="newProductInput" type="text" placeholder="name"></input>
+            <input onChange={(event) => setBrand(event.target.value)}  className="newProductInput" type="text" placeholder="brand"></input>
+            <input onChange={(event) => setCategory(event.target.value)}  className="newProductInput" type="text" placeholder="category"></input>
+            <input onChange={(event) => setCost(event.target.value)}  className="newProductInput" type="number" placeholder="cost"></input>
             <p className="newFeatured">Featured</p>
             <select className="newProductInput" value={data.featured} onClick={(event) => setFeatured(event.target.value)}>
                 <option>True</option>

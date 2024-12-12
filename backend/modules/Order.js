@@ -10,10 +10,6 @@ const OrderSchema = new mongoose.Schema({
       }
     ],
     totalAmount: Number, 
-    order_state: {
-        type: String,
-        required: true,
-    }
 },
 { timestamps: true }
 );

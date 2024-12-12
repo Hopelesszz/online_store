@@ -30,7 +30,7 @@ const Home = () => {
                     <><div className="sliderContainer">
                     <Slider {...settings}>
                     {data.map((data,index)=> (
-                        <div key={index}>
+                        <div className="sliderItem" key={index}>
                             <img className="photoProduct" src={data.photo} />
                             <div className="shortDesc">
                                 <p className="text">{data.name}</p>
@@ -48,7 +48,7 @@ const Home = () => {
                     <><div className="sliderContainer">
                     <Slider {...settings}>
                     {keyboardData.map((keyboardData,index)=> (
-                        <div key={index}>
+                        <div className="sliderItem" key={index}>
                             <img className="photoProduct" src={keyboardData.photo} />
                             <div className="shortDesc">
                                 <p className="text">{keyboardData.name}</p>

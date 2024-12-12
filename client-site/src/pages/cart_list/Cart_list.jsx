@@ -50,7 +50,6 @@ const Cart_list = () => {
                 ))}
                 </>
                 )}
-            <button onClick={addProduct} className="addButton">Add Cart</button>
             <Footer/>
         </div>
         </>

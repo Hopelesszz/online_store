@@ -49,8 +49,18 @@
     align-items: center;
     gap: 10px;
 }
+.sliderContainer{
+    width: 90%;
+    margin-left: 50px;
+}
+.sliderItem{
+    margin-left: 27px;
+}
 .sliderContainer .slick-next {
-    right: 20px; 
+    right: 10px; 
+}
+.sliderContainer .slick-prev {
+    left: 10px; 
 }
 .text{
     color: rgb(221, 221, 221);

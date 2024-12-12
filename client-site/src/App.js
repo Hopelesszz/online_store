@@ -27,8 +27,8 @@ import UpdateUser from "./pages/updateUser/updateUser";
 import Product_view from "./pages/product_view/Product_view";
 import New_Product from "./pages/newProduct/NewProduct";
 import Edit_Product from "./pages/editProduct/EditProduct";
-import New_Cart from "./pages/newCart/newCart"
 import Cart_view from "./pages/cart_view/Cart_view";
+import Order_view from "./pages/order_view/Order_view";
 
 function App() {
   const ProtectedRoute = ({ children }) => {
@@ -72,8 +72,10 @@ function App() {
         <Route path="/edit_product/:id" element={<ProtectedRoute><Edit_Product/></ProtectedRoute>} />
 
         <Route path="/cart_list" element={<ProtectedRoute><Cart_list/></ProtectedRoute>} />
-        <Route path="/new_cart" element={<ProtectedRoute><New_Cart/></ProtectedRoute>} />
         <Route path="/cart_view/:id" element={<ProtectedRoute><Cart_view/></ProtectedRoute>} />
+
+        <Route path="/order_list" element={<ProtectedRoute><Order_list/></ProtectedRoute>} />
+        <Route path="/order_view/:id" element={<ProtectedRoute><Order_view/></ProtectedRoute>} />
 
       </Routes>
     </BrowserRouter>
